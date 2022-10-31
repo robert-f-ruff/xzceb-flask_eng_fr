@@ -25,7 +25,7 @@ def english_to_french(english_text):
     This function converts text in English to French
     """
     french_text = ''
-    if (english_text is not None):
+    if english_text is not None:
         result = language_translator.translate(
             text=english_text,
             model_id='en-fr').get_result()
@@ -37,7 +37,7 @@ def french_to_english(french_text):
     This function converts text in French to English
     """
     english_text = ''
-    if (french_text is not None):
+    if french_text is not None:
         result = language_translator.translate(
             text=french_text,
             model_id='fr-en').get_result()
